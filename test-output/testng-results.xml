@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-15T17:30:05 WIB" name="Suite" finished-at="2025-07-15T17:31:31 WIB" duration-ms="85554">
+    <groups>
+      <group name="Master">
+        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@31bcf236]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@146587a2]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@31bcf236]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@146587a2]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test started-at="2025-07-15T17:30:05 WIB" name="FirefoxTest" finished-at="2025-07-15T17:31:24 WIB" duration-ms="78471">
+      <class name="testCases.TC002_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@31bcf236]" started-at="2025-07-15T17:30:06 WIB" name="setup" finished-at="2025-07-15T17:30:48 WIB" duration-ms="42221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@31bcf236]" started-at="2025-07-15T17:30:48 WIB" name="verifyLogin" finished-at="2025-07-15T17:31:02 WIB" duration-ms="13670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LoginTest@31bcf236]" started-at="2025-07-15T17:31:02 WIB" name="tearDown" finished-at="2025-07-15T17:31:24 WIB" duration-ms="22321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002_LoginTest -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2025-07-15T17:30:05 WIB" name="ChromeTest" finished-at="2025-07-15T17:31:31 WIB" duration-ms="85551">
+      <class name="testCases.TC002_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@146587a2]" started-at="2025-07-15T17:30:06 WIB" name="setup" finished-at="2025-07-15T17:30:55 WIB" duration-ms="49098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@146587a2]" started-at="2025-07-15T17:30:55 WIB" name="verifyLogin" finished-at="2025-07-15T17:31:20 WIB" duration-ms="24980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LoginTest@146587a2]" started-at="2025-07-15T17:31:20 WIB" name="tearDown" finished-at="2025-07-15T17:31:31 WIB" duration-ms="11328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002_LoginTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

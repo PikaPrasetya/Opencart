@@ -1,0 +1,15 @@
+[2025-07-16 11:26:25] [main] DEBUG org.testng.TestNG - suiteXmlPath: "E:\Selenium Java\Opencart\master.xml"
+[2025-07-16 11:26:44] [main] INFO  testCases.TC001_AccountRegistrationTest - ***Starting TC001_AccountRegistrationTest***
+[2025-07-16 11:26:46] [main] INFO  testCases.TC001_AccountRegistrationTest - Click myAccount Link
+[2025-07-16 11:26:47] [main] INFO  testCases.TC001_AccountRegistrationTest - Click Register
+[2025-07-16 11:26:51] [main] INFO  testCases.TC001_AccountRegistrationTest - Fill all the customer details
+[2025-07-16 11:26:53] [main] INFO  testCases.TC001_AccountRegistrationTest - Continue
+[2025-07-16 11:26:54] [main] INFO  testCases.TC001_AccountRegistrationTest - Validating the result
+[2025-07-16 11:26:54] [main] INFO  testCases.TC001_AccountRegistrationTest - ***Finished TC001_AccountRegistrationTest***
+[2025-07-16 11:27:04] [main] INFO  testCases.TC002_LoginTest - ***Starting TC002 Test
+[2025-07-16 11:27:05] [main] INFO  testCases.TC002_LoginTest - click my account
+[2025-07-16 11:27:05] [main] INFO  testCases.TC002_LoginTest - click login
+[2025-07-16 11:27:07] [main] INFO  testCases.TC002_LoginTest - Set email & password
+[2025-07-16 11:27:09] [main] INFO  testCases.TC002_LoginTest - click submit
+[2025-07-16 11:27:10] [main] INFO  testCases.TC002_LoginTest - Validating account
+[2025-07-16 11:27:11] [main] INFO  testCases.TC002_LoginTest - Finish Test TC002

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+  <Properties>
+    <Property name="basePath">./logs</Property> <!-- specify the log file location that will be generated. BasePath is our Project's path' -->
+  </Properties>
+  
+  <Appenders>
+    <!-- Console Appender -->
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+
+    <!-- File Appender with Daily Rolling -->
+     <!-- ${basePath}/automation-%d{yyyy-MM-dd_HH-mm} is logfile name format -->
+     <!-- filePattern="...-%d-%i.log" Adds index to avoid overwrites. -->
+    <RollingFile name="File"
+                 fileName="${basePath}/automation.log"
+                 filePattern="${basePath}/automation-%d{yyyy-MM-dd_HH-mm}-%i.log"
+     			 append="true"> <!-- Ensures new log entries are added, not overwritten. -->
+      <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] %-5level %logger{36} - %msg%n"/>
+      <Policies>
+        <OnStartupTriggeringPolicy/>
+      </Policies>
+      
+      <!-- Once you have more than 7 log files, Log4j2 will delete the oldest one. -->
+      <DefaultRolloverStrategy max="7" fileIndex="min"/> <!-- Reuse the lowest available index number (starting at 1) -->
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <!-- Root logger -->
+    <Root level="Debug"> <!-- log level All < Trace < Debug < Info < Warn < Error < Fatal < Off-->
+      <!-- <AppenderRef ref="Console"/> -->
+      <AppenderRef ref="File"/>  <!-- you can choose where to save the log, console/file, you can enable both -->
+    </Root>
+
+    <!-- Optional: Custom logger for your package -->
+    <!--
+    <Logger name="com.yourcompany.project" level="debug" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="FileLogger"/>
+    </Logger>
+    -->
+  </Loggers>
+</Configuration>
